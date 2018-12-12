@@ -2,11 +2,18 @@ package org.leafeq.exercise.test;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HelloWorld {
 	public static void main(String[] args) {
-		BigDecimal dg1 = new BigDecimal("11");
-		BigDecimal dg2 = dg1.add(new BigDecimal("23"));
-		System.out.println(dg1.subtract(dg2));
+		Map<String,String> map = new HashMap<String, String>();
+		for(int i=0; i<15; i++) {
+			map.put("key" + i, i+"");
+		}
+		
+		System.out.println(map.size());
+		
+		
 	}
 }
